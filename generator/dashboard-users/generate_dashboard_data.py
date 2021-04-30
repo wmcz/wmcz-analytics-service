@@ -7,7 +7,7 @@ import dateutil.parser
 import simplejson as json
 
 s = requests.Session()
-s.headers.update({'User-Agent': "Urbanecm's analytics script (urbanecm@tools.wmflabs.org)"})
+s.headers.update({'User-Agent': "Wikimedia Czech Republic's analytics service (tools.wmcz@tools.wmflabs.org)"})
 
 if len(sys.argv) >= 2:
 	tmpdir = sys.argv[1]
