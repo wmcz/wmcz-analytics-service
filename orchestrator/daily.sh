@@ -3,5 +3,5 @@
 scriptdir="`dirname \"$0\"`"
 cd $scriptdir
 
-bash web-posts/daily.sh
+bash wmcz-reports/daily.sh
 bash dashboard-data/daily.sh
