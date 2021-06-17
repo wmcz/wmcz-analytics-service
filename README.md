@@ -23,4 +23,8 @@ The orchestrator orchestrates the process of gathering all WMCZ-related data and
 
 # Available datasets
 
-To be done soon :).
+## dashboard-data
+
+Data about Wikimedia Czech Republic's courses, as contained in the [Outreach Dashboard](https://outreachdashboard.wmflabs.org/). This does not include data from the [education program extension](https://www.mediawiki.org/wiki/Extension:Education_Program) era yet.
+
+Aggregated data about individual courses are gathered by generator (contained in this repo; see above for details). Data about individual edits are computed in internal Wikimedia Foundation's analytics cluster, and the code is available in [wmcz-analytics-wmf-cluster](https://github.com/wmcz/wmcz-analytics-wmf-cluster).
