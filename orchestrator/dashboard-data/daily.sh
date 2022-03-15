@@ -4,7 +4,7 @@ mkdir /tmp/$$
 echo /tmp/$$
 
 # Generate the dataset
-python3 ~/datasets-generator/dashboard-users/generate_dashboard_users.py /tmp/$$
+python3 ~/analytics/generator/dashboard-data/generate_dashboard_data.py /tmp/$$
 
 # Publish the result
 mkdir -p ~/public_html/datasets/periodic/dashboard-data/daily
