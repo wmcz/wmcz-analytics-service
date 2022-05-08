@@ -38,6 +38,7 @@ coursesUsersFile = open(os.path.join(tmpdir, 'coursesUsers.tsv'), 'w')
 coursesUsersFile.write(format_row(["campaign", "course_slug", "course_start", "user_role", "user_name", "user_tenure_bucket", "user_editcount_bucket"]) + "\n")
 for campaign_raw in campaigns:
 	r = s.get("https://outreachdashboard.wmflabs.org/campaigns/%s/users.json" % campaign_raw)
+	print(r.url)
 	campaign = normalize_campaign(campaign_raw)
 	data = r.json()
 	for user in data.get('users', []):
